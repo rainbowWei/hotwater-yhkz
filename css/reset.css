@@ -6,14 +6,8 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
 html, body {
     min-height: 100%;
 }
-
-body {
-    font-family: "Microsoft YaHei";
-    font-size:14px;
-    color:#333;
-}
 h1, h2, h3, h4, h5, h6{font-weight:normal;}
-ul,ol {
+ul,ol,li {
     list-style: none;
 }
 

@@ -11,7 +11,7 @@
 
 <body>
     <div class="header">
-        <div class="hcontent">
+        <div class="hcontent clearfix">
             <div class="logo fl"></div>
             <div class="subtitle fl">先控仿真系统</div>
             <div class="time fl">2020/2/19</div>
@@ -19,8 +19,118 @@
     </div>
     <div class="title">采暖换热系统</div>
     <div class="content clearfix">
-        <div class="left fl"></div>
-        <div class="right fr"></div>
+        <div class="left fl">
+            <div class="hot">
+                <div class="windsteam"></div>
+                <div class="tap"></div>
+                <div class="hotline"></div>
+            </div>
+            <div class="cold"></div>
+        </div>
+        <div class="right fr">
+            <table class="pure-table pure-table-horizontal">
+                <thead>
+                    <tr>
+                        <th colspan="3">运行参数</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>天气温度 &nbsp; &nbsp;℃</td>
+                        <td>风力 &nbsp; &nbsp; 级</td>
+                        <td>室内温度 &nbsp; &nbsp;℃</td>
+                    </tr>
+
+                    <tr>
+                        <td>蒸汽温度&nbsp; &nbsp; ℃</td>
+                        <td>蒸汽流量&nbsp; &nbsp; t/h</td>
+                        <td>蒸汽温度&nbsp; &nbsp; MPa</td>
+                    </tr>
+
+                    <tr>
+                        <td>疏水温度 &nbsp; &nbsp;℃</td>
+                        <td>疏水流量 &nbsp; &nbsp;t/h</td>
+                        <td>疏水压力 &nbsp; &nbsp;MPa</td>
+                    </tr>
+                    <tr>
+                        <td>进水温度 &nbsp; &nbsp;℃</td>
+                        <td>进水流量 &nbsp; &nbsp;t/h</td>
+                        <td>进水压力 &nbsp; &nbsp;MPa</td>
+                    </tr>
+                    <tr>
+                        <td>热水温度 &nbsp; &nbsp;℃</td>
+                        <td>热水流量 &nbsp; &nbsp;t/h</td>
+                        <td>热水压力 &nbsp; &nbsp;MPa</td>
+                    </tr>
+                    <tr>
+                        <td>回水温度 &nbsp; &nbsp;℃</td>
+                        <td>回水流量 &nbsp; &nbsp;t/h</td>
+                        <td>回水压力 &nbsp; &nbsp;MPa</td>
+                    </tr>
+                    <tr>
+                        <td>换热器液位 &nbsp; &nbsp;m</td>
+                        <td>水箱液位 &nbsp; &nbsp;m</td>
+                        <td>管网温度下限 &nbsp; &nbsp;℃</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="pure-table pure-table-horizontal">
+                <thead>
+                    <tr>
+                        <th colspan="4">统计参数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>天气温度</td>
+                        <td>平均值 &nbsp; &nbsp; ℃</td>
+                        <td>最高值 &nbsp; &nbsp;℃</td>
+                        <td>最低值 &nbsp; &nbsp;℃</td>
+                    </tr>
+                    <tr>
+                        <td>热水温度</td>
+                        <td>平均值 &nbsp; &nbsp; ℃</td>
+                        <td>最高值 &nbsp; &nbsp;℃</td>
+                        <td>最低值 &nbsp; &nbsp;℃</td>
+                    </tr>
+                    <tr>
+                        <td>室内温度</td>
+                        <td>平均值 &nbsp; &nbsp; ℃</td>
+                        <td>最高值 &nbsp; &nbsp;℃</td>
+                        <td>最低值 &nbsp; &nbsp;℃</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="pure-table pure-table-horizontal">
+                <thead>
+                    <tr>
+                        <th colspan="3">考核参数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>热水温度稳态占比</td>
+                        <td>室内温度达标率</td>
+                        <td>先控自动占比</td>
+                    </tr>
+                    <tr>
+                        <td>控制性能指标</td>
+                        <td colspan="2">蒸汽流量考核时间内平均值</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn">
+                <ul class="list">
+                    <li>先控自动</li>
+                    <li>开始统计</li>
+                    <li>开始考核</li>
+                    <li>先控手动</li>
+                    <li>统计清零</li>
+                    <li>重新考核</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 

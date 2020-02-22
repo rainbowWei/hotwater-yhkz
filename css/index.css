@@ -1,13 +1,16 @@
- 
+ body{
+     background: #b9b9b9;
+ }
 .header{
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 90px;
+    line-height: 90px;
+    background: #7d7d7d;
     font-size: 24px;
-    border-bottom:4px solid #eee;
 }
 .hcontent{
     width: 95%;
+    min-width: 1200px;
     margin: 0 auto;
 }
 .hcontent .logo{
@@ -18,6 +21,9 @@
 }
 .hcontent .subtitle{
     margin: 0 400px;
+    font-family: "Source Han Sans SC Regular";
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 .title{
     font-size: 18px;
@@ -26,16 +32,118 @@
 }
 .content{
     width: 95%;
+    min-width: 1200px;
     margin: 0 auto;
-    height: 50px;
+    height: 100%;
+    padding-bottom: 106px;
+
 } 
 .left{
-    width: 50%;
+    width: 60%;
     height: 100%;
-    background: pink;
+}
+.square{
+    position:relative;
+    width: 0;
+    height: 0;
+    border-width: 0 40px 40px;
+    border-style: solid;
+    border-color: transparent transparent blue;
 }
 .right{
-    width: 50%;
-    height: 100%;
-    background: lightcyan;
+    width: 40%;
+    min-height: calc(100vh - 90px);
+    background: #9f9f9f;
+    box-sizing: border-box;
+    border-top: 1px solid #000;
 }
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #000;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-top:none;
+}
+ 
+.pure-table caption {
+    color: #000;
+    font: italic 85%/1 arial,sans-serif;
+    padding: 1em 0;
+    text-align: center;
+}
+ 
+.pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+}
+ 
+.pure-table thead {
+    vertical-align: bottom;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+ 
+.pure-table td {
+    background-color: transparent;
+    text-align: center;
+    font-size: 14px;
+}
+.pure-table-horizontal td,.pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #000;
+}
+ 
+.pure-table-horizontal tbody>tr:last-child>td {
+    border-bottom-width: 0;
+}
+.btn{
+    width: 100%;
+    height: 103px;
+    border:1px solid #000;
+    border-top:none;
+    box-sizing: border-box;
+
+}
+.list{
+    width: 384px;
+    margin-left: 130px;
+}
+.list li{
+    float: left;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #626262;
+    margin: 16px 38px 0 0;
+    cursor: pointer;
+}
+.hot{
+    width:80%;
+    height: 505px;
+    border:1px solid red;
+    margin: 95px auto 0;
+    position: relative;
+}
+.windsteam{
+    width: 290px;
+    height: 160px;
+    background: blue;
+    position: absolute;
+    top:-85px;
+    left: 58px;
+}
+.cold{
+    width:80%;
+    height: 565px;
+    border:1px solid green;
+    margin: 0 auto;
+}
+
