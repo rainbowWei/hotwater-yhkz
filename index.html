@@ -7,28 +7,37 @@
     <title>热水云端仿真产品</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
 </head>
 
 <body>
     <div class="header">
-        <div class="hcontent clearfix">
-            <div class="logo fl"></div>
-            <div class="subtitle fl">先控仿真系统</div>
-            <div class="time fl">2020/2/19</div>
+        <div class="hcontent">
+            <div class="logo"></div>
+            <div class="subtitle">先控仿真系统</div>
+            <div class="timetitle clearfix">
+                <div class="title fl">采暖换热系统</div>
+                <div class="time fl">
+                    <div class="icon fl"></div>
+                    <div class="text fl">
+                        <div>11:20:20</div>
+                        <div>2020/2/19</div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="line"></div>
     </div>
-    <div class="title">采暖换热系统</div>
     <div class="content clearfix">
         <div class="left fl">
             <div class="hot">
                 <div class="windsteam"></div>
                 <div class="tap"></div>
-                <div class="hotline"></div>
             </div>
             <div class="cold"></div>
         </div>
         <div class="right fr">
-            <table class="pure-table pure-table-horizontal">
+            <!-- <table class="pure-table pure-table-horizontal">
                 <thead>
                     <tr>
                         <th colspan="3">运行参数</th>
@@ -129,6 +138,183 @@
                     <li>统计清零</li>
                     <li>重新考核</li>
                 </ul>
+            </div> -->
+            <div class="run">
+                <h1>
+                    <span>运行统计</span>
+                    <b></b>
+                </h1>
+                <ul class="list">
+                    <li>
+                        <div>
+                            <span class="frist">天气温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">风力</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">级</span>
+                        </div>
+                        <div>
+                            <span class="third">室内温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">蒸汽温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">蒸汽流量</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">t/h</span>
+                        </div>
+                        <div>
+                            <span class="third">蒸汽温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">疏水温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">疏水流量</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">t/h</span>
+                        </div>
+                        <div>
+                            <span class="third">疏水压力</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">MPa</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">进水温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">进水流量</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">t/h</span>
+                        </div>
+                        <div>
+                            <span class="third">进水压力</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">MPa</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">热水温度</span>
+                            <span class="colorblue colorred">5000</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">热水流量</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">t/h</span>
+                        </div>
+                        <div>
+                            <span class="third">热水压力</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">MPa</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">回水温度</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                        <div>
+                            <span class="second">回水流量</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">t/h</span>
+                        </div>
+                        <div>
+                            <span class="third">回水压力</span>
+                            <span class="colorblue colorpurple">500.00</span>
+                            <span class="unit">MPa</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="frist">换热器液位</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">m</span>
+                        </div>
+                        <div>
+                            <span class="second">水箱液位</span>
+                            <span class="colorblue coloryellow">500.00</span>
+                            <span class="unit">m</span>
+                        </div>
+                        <div>
+                            <span class="third">管网温度下限</span>
+                            <span class="colorblue">500</span>
+                            <span class="unit">℃</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="census">
+                <h1>
+                    <span>统计参数</span>
+                    <b></b>
+                    <div class="change">
+                        <div class="start">开始统计</div>
+                        <div class="reset">统计清零</div>
+                    </div>
+                </h1>
+                <ul class="censuslist">
+                    <li>
+                        <span>天气温度</span>
+                        <span>平均值
+                            <b>000.00</b>℃</span>
+                        <span>最高值
+                            <b>000.00</b>℃</span>
+                        <span>最低值
+                            <b>000.00</b>℃</span>
+                    </li>
+                    <li>
+                        <span>热水温度</span>
+                        <span>平均值
+                            <b>000.00</b>℃</span>
+                        <span>最高值
+                            <b>000.00</b>℃</span>
+                        <span>最低值
+                            <b>000.00</b>℃</span>
+                    </li>
+                    <li>
+                        <span>室内温度</span>
+                        <span>平均值
+                            <b>000.00</b>℃</span>
+                        <span>最高值
+                            <b>000.00</b>℃</span>
+                        <span>最低值
+                            <b>000.00</b>℃</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="census check">
+                <h1>
+                    <span>考核参数</span>
+                    <b></b>
+                    <div class="change">
+                        <div class="start">开始统计</div>
+                        <div class="reset">统计清零</div>
+                    </div>
+                </h1>
+                <div class="checkcon"></div>
             </div>
         </div>
     </div>
